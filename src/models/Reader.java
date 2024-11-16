@@ -61,6 +61,14 @@ public class Reader {
         this.gender = gender;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Reader {" +
+                " ID=" + id +
+                ", fullName='" + fullName + '\'' +
+                ", email='" + email + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", gender=" + gender +
+                '}';
+    }
 }

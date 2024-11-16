@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Library {
-    //Library(id, name, address, List<Book>books, List<Reader>readers)
+
 
     private Long id;
     private String name;
@@ -12,7 +12,16 @@ public class Library {
     private List<Book> books;
     private List<Reader> readers;
 
-    // Конструктор жана геттер/сеттер
+
+    public Library(Long id, String name, String address, List<Book> books, List<Reader> readers) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
+        this.books = books;
+        this.readers = readers;
+    }
+
+
     public Library(Long id, String name, String address) {
         this.id = id;
         this.name = name;
@@ -21,7 +30,7 @@ public class Library {
         this.readers = new ArrayList<>();
     }
 
-    // Геттер жана сеттерлер
+
     public Long getId() {
         return id;
     }
@@ -34,6 +43,14 @@ public class Library {
         return readers;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Library{ " +
+                "ID=" + id +
+                ",   name='" + name + '\'' +
+                ",   address='" + address + '\'' +
+                ",   books=" + books +
+                ",  readers=" + readers +
+                '}';
+    }
 }

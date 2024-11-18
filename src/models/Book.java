@@ -9,8 +9,6 @@ public class Book {
     private String author;
     private Genre genre;
 
-    public Book() {
-    }
 
     public Book(Long id, String name, String author, Genre genre) {
         this.id = id;

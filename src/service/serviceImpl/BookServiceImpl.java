@@ -21,6 +21,14 @@ public class BookServiceImpl implements BookService {
         }return book;
     }
 
+//    @Override
+//    public List<Book> getAllBooks(Long libraryId) {
+//        for(Library library: Database.libraries){
+//
+//        }
+//        return List.of();
+//    }
+
     @Override
     public List<Book> getAllBooks(Long libraryId) {
         Library library = Database.libraries.stream()

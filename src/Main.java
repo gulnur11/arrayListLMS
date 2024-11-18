@@ -41,6 +41,7 @@ public class Main {
          System.out.println("Save method " + libraryService.saveLibrary(libraries));
          System.out.println("\nDelete method  " +libraryService.deleteLibrary(1L));
          System.out.println(libraryService.getAllLibraries());
+        System.out.println("test");
 
 
 //        try {
